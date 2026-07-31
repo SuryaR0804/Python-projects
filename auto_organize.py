@@ -25,7 +25,7 @@ def get_dir(filename):
     extension = filename.suffix.lstrip('.').lower()
     return dirs.get(extension, "Miscellaneous")
 
-# --- NEW EVENT HANDLER CLASS ---
+#New Event Handler Class
 TEMP_EXTS = {".crdownload", ".part", ".tmp", ".download"}
 
 class DownloadHandler(FileSystemEventHandler):
@@ -53,7 +53,7 @@ class DownloadHandler(FileSystemEventHandler):
         if not event.is_directory:
             self.process_file(event.dest_path)
 
-# --- START WATCHER ENGINE ---
+#Start Watcher Engine
 if __name__ == "__main__":
     target_path = Path(argv[1]).expanduser().resolve() if len(argv) == 2 else Path("~/Downloads").expanduser().resolve()
 
