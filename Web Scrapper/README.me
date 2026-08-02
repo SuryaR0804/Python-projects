@@ -1,23 +1,18 @@
-# U.S. Companies Web Scraper
+#Companies Web Scraper
+A Python data extraction script that parses HTML table structures (`<tr>`, `<th>`, `<td>`) from Wikipedia using `requests` and `BeautifulSoup`, cleans raw string artifacts, and exports structured datasets to `.csv` format using `Pandas`.from Wikipedia.
 
-A Python web scraping tool that extracts, processes, and exports company revenue data from Wikipedia.
+### 1. Largest Companies Web Scraper
+* **Location:** `largest_companies.ipynb` (Both `scraper.py` and output `companies.csv` reside in this folder)
 
-## Projects Included
-
-### 1. U.S. Companies Web Scraper
-* **Location:** `company-web-scraper/` (Both `scraper.py` and output `companies.csv` reside in this folder)
-* **Description:** A Python data extraction script that parses HTML table structures (`<tr>`, `<th>`, `<td>`) from Wikipedia using `requests` and `BeautifulSoup`, cleans raw string artifacts, and exports structured datasets to `.csv` format using `Pandas`.
-
-## 📌 Features
+## Features:
 * **Web Scraping:** Fetches web pages using `requests` and parses DOM elements with `BeautifulSoup`.
 * **Data Cleaning:** Cleans raw text, handles HTML tags, and strips formatting artifacts.
-* **Pandas Integration:** Loads extracted headers and row data into a DataFrame and exports to `companies.csv`.
+* **Pandas Integration:** Loads extracted headers and row data into a DataFrame and exports to `Largest_Companies.csv`.
 
-## 🛠️ Tech Stack
-* **Language:** Python 3
+##Used:L
+* **Language:** Python3, Jupyter Notebook
 * **Libraries:** `beautifulsoup4`, `requests`, `pandas`
 
-## 🚀 Quickstart
-```bash
+## Quickstart
 pip install requests beautifulsoup4 pandas
-python scraper.py
+python3 largest_companies.py
