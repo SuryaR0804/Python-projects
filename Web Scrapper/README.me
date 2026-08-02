@@ -1,15 +1,23 @@
-Largest Companies Web Scrapper
+# U.S. Companies Web Scraper
 
-A Python script that scrapes the largest companies of the world by revenue from Wikipedia, processes the HTML table data using 
-`BeautifulSoup` and `Pandas`, and exports it to a structured CSV file.
+A Python web scraping tool that extracts, processes, and exports company revenue data from Wikipedia.
 
-**Location:**`largest_companies.ipynb`
+## Projects Included
+
+### 1. U.S. Companies Web Scraper
+* **Location:** `company-web-scraper/` (Both `scraper.py` and output `companies.csv` reside in this folder)
+* **Description:** A Python data extraction script that parses HTML table structures (`<tr>`, `<th>`, `<td>`) from Wikipedia using `requests` and `BeautifulSoup`, cleans raw string artifacts, and exports structured datasets to `.csv` format using `Pandas`.
+
+## 📌 Features
 * **Web Scraping:** Fetches web pages using `requests` and parses DOM elements with `BeautifulSoup`.
-* **Data Cleaning:** Cleans raw text, handles HTML tags (`<tr>`, `<th>`, `<td>`), and strips formatting artifacts.
+* **Data Cleaning:** Cleans raw text, handles HTML tags, and strips formatting artifacts.
 * **Pandas Integration:** Loads extracted headers and row data into a DataFrame and exports to `companies.csv`.
 
-* **Language:** Python3, JupyterNotebook
+## 🛠️ Tech Stack
+* **Language:** Python 3
 * **Libraries:** `beautifulsoup4`, `requests`, `pandas`
 
-#Install libraries
+## 🚀 Quickstart
+```bash
 pip install requests beautifulsoup4 pandas
+python scraper.py
